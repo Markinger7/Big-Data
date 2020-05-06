@@ -17,7 +17,7 @@ A repo containing notes and code related to Big Data
     - is a place for all of the raw data (even pictures, videos, audio)
     - 'on read' flexible, uses a schema defined by the demand (ad hoc
 
-## Advantage distributed system for BIG DATA
+## Advantage of distributed systems for BIG DATA
 - The cost of a distributed system is linear, whereas the cost of a local system is exponential
 - distributed systems are easy to scale
 - they can tolerate failure, e.g. when one machine breaks
