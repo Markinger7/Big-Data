@@ -22,7 +22,7 @@ A repo containing notes and code related to Big Data
 - distributed systems are easy to scale
 - they can tolerate failure, e.g. when one machine breaks
 
-### Hadoop Distributed File System (HDFS)
+## Hadoop Distributed File System (HDFS)
 - a big data storage system that splits data into chunks and stores the chunks across a cluster of computers
 - can tolerate failure, since it duplicates files across the machines
     - each block has 128mb and gets duplicated three times
@@ -30,7 +30,7 @@ A repo containing notes and code related to Big Data
     - this is a method to distribute tasks over a distributed network
     - contains a Job tracker(NameNode) and multiple Task trackers (Data Node)
 
-### Spark
+## Spark
 - published in  2013 from UC Berkley
 - is like a flexible Version of MapReduce
 - can use files from different formats (Cassandra, AWS S3, HDFS and more)
