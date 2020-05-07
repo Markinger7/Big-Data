@@ -40,6 +40,9 @@ A repo containing notes and code related to Big Data
 - to use MapReduce, files need to be saved as HDFS
 - Spark is faster than MapReduce (100x), because it saves to the ram and not to the hard disk
 
+### Apache Spark APIs: RDDs, DataFrames and Datasets
+
+
 ### Spark RDDs
 - relies on the Ideas of the Resilient Distributed Dataset
     1. Distributed collection of data
