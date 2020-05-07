@@ -40,17 +40,35 @@ A repo containing notes and code related to Big Data
 - to use MapReduce, files need to be saved as HDFS
 - Spark is faster than MapReduce (100x), because it saves to the ram and not to the hard disk
 
-### Apache Spark APIs: RDDs, DataFrames and Datasets
+### Spark APIs: RDDs, DataFrames and Datasets
 
-
-### Spark RDDs
+#### Spark RDDs
 - relies on the Ideas of the Resilient Distributed Dataset
     1. Distributed collection of data
     2. failure tolerant
     3. Parallel operations
     4. Ability to use many data sources
+- 'RDD is an immutable distributed collection of elements of your data, partitioned across nodes in your cluster that can be operated in parallel with a low-level API that offers transformations and actions'
 - RDD are 'lazy evaluated ' → code gets only activated as far as it is needed
 - They hold their values in tuples, so called 'key-value-pairs'
+- When to consider RDDs?
+    - low-level transformation and actions
+    - unstructured data
+    - no schema is required
+
+#### DataFrames
+- DataFrames are an immutable distributed collection of data
+- data is organized into named columns
+- DataFrame are also 'lazy evaluated'
+- When to consider DataFrames
+    - high-level abstraction for high level expressions (agg, sum, SQL, filters, columnar access  etc.)
+    - custom view and structure
+
+#### Datasets
+- is a distributed collection of data that provides the benefits of RDDs (strong typing, ability to use powerful lambda functions) with the benefits of Spark SQL’s optimized execution engine.
+- The Dataset API is available in Scala and Java.
+- Datasesets are also 'lazy evaluated'
+
 
 ### Byond Spark for stroing and processing Big Data
 - Spark isn't a data storage system, and there are a number of tools besides Spark that can be used to process and analyze large datasets.
